@@ -1,0 +1,98 @@
+#task1
+s1=input('Enter a string:')
+inp=int(input('Please Enter A Number :'))
+s2=s1[inp::-1]+s1[inp+1::]
+print(s2)
+
+#task2
+s1=input()
+i=int(inp)
+s2=s1[i::-1]+s1[i+1::]
+
+#task3
+bin = True 
+
+S= input()
+
+for i in S:
+
+   if(i!='1' and i!='0'):
+
+    bin=False
+   else:
+      bin=True
+
+
+if(bin==True):
+   print('binary number')
+else : 
+    print('not binary')
+    
+#Task5
+s=input('Please enter anything:')
+for i in range(len(s)):
+   print (s[0:i+1:1])
+   
+   
+#task6
+s=input('Please enter something:')
+for i in s:
+  print(i+ ':' +str(ord(i)))
+
+#task7
+s=input()
+for i in s:
+  if i=='z':
+    print('a')
+else :
+    ascii_i=ord(i)
+    ch=chr(ascii_i+1)
+    print(ch,end="")
+    
+#task8
+s=input()
+for i in range (1,len(s),2):
+    if(97<=ord(s[i])<=122):
+     as_cap=ord(s[i])-32
+     print(chr(as_cap),end="")
+    else:
+         print(s[i])
+#task9
+
+s=input()
+
+std=s[0]
+
+#task10
+Num_1=input(str("Enter:"))
+Num_2=input(str("Enter:"))
+el=[]
+bl=[]
+for character in Num_1:
+   el.append(ord(character))
+for character in Num_2:
+   bl.append(ord(character))
+   if el==bl:
+      print("Yes")
+   else :
+         print("No")
+
+s1=std
+
+for i in s:
+
+    if(i!=std):
+
+       std=i
+
+       s1+=std
+
+       print(s1)
+ 
+#Task11
+password='hello4there4good4people'
+newp=password.split("4")
+el=[]
+el.append(newp)
+Length=len(el)
+print(Length)
